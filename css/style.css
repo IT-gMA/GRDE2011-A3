@@ -1627,20 +1627,20 @@
         }
 
         .text_container .title{
-            font-size: 3.8vw;
+            font-size: 3.85vw;
             padding-top: 3vw;
             padding-bottom: 2vw;
         }
 
         .text_container p{
-            font-size: 1.9vw;
+            font-size: 1.92vw;
             padding-bottom: 3vw;
         }
           
         
         /*====================ABOUT=========================*/
         #about p, #about a{
-            font-size: 1.7vw;
+            font-size: 1.82vw;
         }
 
        .abt_img{
@@ -1651,9 +1651,9 @@
        }
    
        .abt_us_container{
-           width: 45vw;
-           height: 45vw;
-           transform: translate(-24vw, 18vw);
+           width: 48vw;
+           height: 48vw;
+           transform: translate(-23vw, 18vw);
        }
 
        #about .abt_us_container .title{
