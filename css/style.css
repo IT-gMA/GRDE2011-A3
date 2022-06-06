@@ -1653,7 +1653,7 @@
        .abt_us_container{
            width: 49vw;
            height: 49vw;
-           transform: translate(-23vw, 18vw);
+           transform: translate(-23vw, 15vw);
        }
 
        #about .abt_us_container .title{
@@ -1708,7 +1708,7 @@
             padding-top: 2.4vw;
             font-size: 3.5vw;
         }
-        
+
         #gallery .circle a{
             font-size: 1.77vw;
         }
