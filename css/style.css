@@ -8,8 +8,9 @@
        }
        
    a { 
-       text-decoration: none; color:white; 
-       font-weight: lighter;
+       text-decoration: none; 
+       color:white; 
+       font-weight: normal;
    }
    
    section{
@@ -340,11 +341,11 @@
    /*===============ANIMATIONS================*/
    /*==============Anchor texts==============*/
    a:hover{
-       font-weight: normal;
+       font-weight: bold;
    }
    
    a:active{
-       font-weight: bold;
+       text-decoration: underline
    }
    
    /*=================Circular buttons================*/
