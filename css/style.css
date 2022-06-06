@@ -866,6 +866,7 @@
            border-bottom-right-radius: 40px;
            width: 680px;
            height: 80px;
+           padding-left: 56px;
 
            transform: translate(55%, 0%);
        }
@@ -962,11 +963,12 @@
        }
    
        .nav_menu{
-           width: 460px;
-           height: 70px;
-           padding: 0px 32px;
-           border-bottom-left-radius: 36px;
-           border-bottom-right-radius: 36px;
+            width: 460px;
+            height: 70px;
+            padding: 0px 32px;
+            border-bottom-left-radius: 36px;
+            border-bottom-right-radius: 36px;
+            padding-left: 56px;
 
            transform: translate(58%, 0%);
        }
