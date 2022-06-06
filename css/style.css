@@ -1643,17 +1643,17 @@
        }
    
        .abt_us_container{
-           width: 40vw;
-           height: 40vw;
-           transform: translate(-28vw, 20vw);
-       }
-
-       .abt_us_container p{
-           padding: 2.2vw 2.6vw;
+           width: 40.5vw;
+           height: 40.5vw;
+           transform: translate(-27.5vw, 18vw);
        }
 
        #about .abt_us_container .title{
             padding-top: 5.6vw;
+        }
+
+       .abt_us_container p{
+           padding: 2vw 2.6vw;
        }
    
        .review_container{
