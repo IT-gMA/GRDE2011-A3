@@ -1651,8 +1651,8 @@
        }
    
        .abt_us_container{
-           width: 48vw;
-           height: 48vw;
+           width: 49vw;
+           height: 49vw;
            transform: translate(-23vw, 18vw);
        }
 
@@ -1667,7 +1667,7 @@
    
        .review_container{
            width: 52vw;
-           transform: translate(22vw, 98vw);
+           transform: translate(22vw, 96vw);
        }
 
        .review_container p{
@@ -1685,8 +1685,32 @@
        }
 
        /*===================GALLERY======================*/
+        #gallery .description_container{
+            border-top-left-radius: 11vw;
+            border-bottom-left-radius: 11vw;
+            height: 22vw;
+            width: 38vw;
+
+            transform: translate(1%, 10vw);
+        }
+
+        #gallery .icon{
+            transform: translate(2%, 28vw);
+        }
+
+        .description_container p{
+            padding: 0vw 3vw 0vh 3.6vw;
+            margin: 1vw 2vw;
+            font-size: 1.6vw;
+        }
+
+        .description_container .title{
+            padding-top: 2.4vw;
+            font-size: 3.5vw;
+        }
+        
         #gallery .circle a{
-            font-size: 1.75vw;
+            font-size: 1.77vw;
         }
 
         /*=================BOOKING=====================*/
