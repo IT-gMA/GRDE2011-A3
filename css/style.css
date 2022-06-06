@@ -340,13 +340,19 @@
    
    /*===============ANIMATIONS================*/
    /*==============Anchor texts==============*/
-   a:hover{
-       font-weight: bold;
-   }
-   
-   a:active{
-       text-decoration: underline
-   }
+    a:hover{
+        font-weight: bold;
+    }
+    
+    a:active, a::after, a:focus, a:target, a:visited{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    a.active{
+        font-weight: bold;
+        text-decoration: underline;
+    }
    
    /*=================Circular buttons================*/
    #home_button:hover, #gallery .circle:hover{
@@ -866,7 +872,7 @@
            border-bottom-right-radius: 40px;
            width: 680px;
            height: 80px;
-           padding-left: 56px;
+           padding-left: 10px;
 
            transform: translate(55%, 0%);
        }
