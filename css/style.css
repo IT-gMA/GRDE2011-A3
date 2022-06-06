@@ -1621,24 +1621,26 @@
         }
         
         .text_container{
-            width: 27vw;
+            width: 30vw;
             transform: translate(0, 75vw);
             right: 1.2vw;
         }
 
         .text_container .title{
+            font-size: 3.8vw;
             padding-top: 3vw;
             padding-bottom: 2vw;
         }
 
         .text_container p{
+            font-size: 1.9vw;
             padding-bottom: 3vw;
         }
           
         
         /*====================ABOUT=========================*/
         #about p, #about a{
-            font-size: 1.45vw;
+            font-size: 1.7vw;
         }
 
        .abt_img{
@@ -1649,17 +1651,18 @@
        }
    
        .abt_us_container{
-           width: 40.5vw;
-           height: 40.5vw;
-           transform: translate(-27.5vw, 18vw);
+           width: 45vw;
+           height: 45vw;
+           transform: translate(-24vw, 18vw);
        }
 
        #about .abt_us_container .title{
-            padding-top: 5.6vw;
+            padding-top: 6.6vw;
         }
 
        .abt_us_container p{
            padding: 2vw 2.6vw;
+           padding-bottom: 1vw;
        }
    
        .review_container{
@@ -1668,11 +1671,11 @@
        }
 
        .review_container p{
-           padding: 0.1vh 1.6vw;
+           padding: 0.2vw 1.6vw;
        }
 
        #about .review_container .title{
-           font-size: 2.4vw;
+           font-size: 2.45vw;
        }
    
        #about .icon{
