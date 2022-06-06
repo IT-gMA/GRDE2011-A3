@@ -1684,6 +1684,11 @@
            transform: translate(23vw, 26.5vw);
        }
 
+       /*===================GALLERY======================*/
+        #gallery .circle a{
+            font-size: 1.75vw;
+        }
+
         /*=================BOOKING=====================*/
         .form_container .title, .calendar_container .title, .calendar_container i{
             font-size: 3.8vw;
