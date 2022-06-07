@@ -858,7 +858,7 @@
             width: 120px;
             height: 120px;
 
-            transform: translate(320%, 12%);
+            transform: translate(280%, 12%);
         }
     
         .circle img{
@@ -870,7 +870,7 @@
        .nav_menu{
            border-bottom-left-radius: 40px;
            border-bottom-right-radius: 40px;
-           width: 660px;
+           width: 610px;
            height: 78px;
            padding-left: 10px;
 
