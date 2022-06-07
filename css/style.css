@@ -1092,7 +1092,7 @@
         #home_button{
             width: 10vw;
             height: 10vw;
-            transform: translate(22vw, 12%);
+            transform: translate(18vw, 11%);
         }
 
         .circle img{
@@ -1102,25 +1102,25 @@
         }
         
         .nav_menu{
-            transform: translate(23vw, 0vw);
-            width: 42vw;
-            height: 7.1vw;
-            border-bottom-left-radius: 4vw;
-            border-bottom-right-radius: 4vw;
+            transform: translate(19vw, 0vw);
+            width: 40vw;
+            height: 7vw;
+            border-bottom-left-radius: 3.8vw;
+            border-bottom-right-radius: 3.8vw;
 
             padding-left: 56px;
             padding-right: 20px;
         }
 
         .nav_menu a{
-            font-size: 1.5vw;
+            font-size: 1.3vw;
             margin: 2.4vw 1.2vw 0vh 2vw;
         }
    
    
        /*=====================HOME====================*/
        #home .cover_img{
-           width: 100vw;
+           width: 96vw;
            min-width: unset;
            max-width: 1100px;
            border-bottom-right-radius: 2.8vw;
@@ -1130,15 +1130,19 @@
        }
 
         .text_container{
-            height: 34vw;
-            width: 22vw;
+            height: 32vw;
+            width: 20vw;
             min-height: unset;
             max-height: unset;
             max-width: unset;
             min-width: unset;
             padding: 0.4vw 1.6vw;
 
-            transform: translate(73vw, 39.5vw);
+            transform: translate(65vw, 40vw);
+        }
+
+        .text_container p{
+            padding-bottom: 1.25vw;
         }
 
         .text_container .title{
