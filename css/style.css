@@ -885,10 +885,7 @@
    
    /* ===== DESKTOP HD: Media queries for most HD desktops ===== */
    @media only screen and (max-width: 1920px) {
-        .title{
-            font-size: xx-large;
-        }
-
+        
         /*fixed sized navigation elements*/
         #home_button{
             width: 120px;
