@@ -22,22 +22,17 @@
         <script src="https://kit.fontawesome.com/b593de632a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        
-
-        <!--HEADER-->
-        <header>
-        </header>
-
         <!--NAVIGATION-->
         <div class="nav">
             <div class="nav_menu">
-                <a id="abt_anchor" href="#about">About</a> 
+                <!--Navigation buttons to take users to each section of the site-->
+                <a href="#about">About</a> 
                 <a href="#gallery">Gallery</a>
                 <a href="#booking">Booking</a>
                 <a href="#contact">Contact</a>
             </div>
             
-            <!--LOGO-->
+            <!--LOGO: circular logo that takes users back to the homepage-->
             <a class="circle" id="home_button" href="#home">
                 <img src="images/lilacvalley_logo.PNG" alt="A logo of a barn">
             </a>
@@ -48,8 +43,10 @@
         <main id="main_content" role="main">
             <!--Home-->
             <section id="home">
+                <!--Homepage's cover image that sits at the top left of the page-->
                 <img class="cover_img" src="images/accomodation.jpg">
 
+                <!--Brief description of the farm stay, sits at the bottom right of the cover image-->
                 <div class="text_container">
                     <p class="title">
                         Immerse yourself in the serenity of Australia's nature
@@ -67,22 +64,24 @@
                 </div>
             </section>
        
-            <!--SECTION 1:-->
+            <!--SECTION 1: About-->
             <section id="about">
                 <img class="abt_img" src="images/sunset_img.jpg" alt="a picture of a desert">
 
-              <div class="abt_us_container">
-                    <p class="title">
-                        About us
-                    </p>
-                    <p class="abt_us_txt">
-                        After years of hard work, the property now features a beautifully restored, open plan, luxury barn house, on four acres of land home to sheep, chickens, ducks and one very friendly goat named Rosie. There is an outdoor plunge pool just off the back verandah, and a stunning cottage garden. The Lilac Valley Farm Stay has been incredibly popular on AirBnB, and was even featured in a handful of online articles
-                    </p>
-                    <a>Read more</a>
-                </div>
+                <!--Brief description of the estate-->
+                <div class="abt_us_container">
+                        <p class="title">
+                            About us
+                        </p>
+                        <p class="abt_us_txt">
+                            After years of hard work, the property now features a beautifully restored, open plan, luxury barn house, on four acres of land home to sheep, chickens, ducks and one very friendly goat named Rosie. There is an outdoor plunge pool just off the back verandah, and a stunning cottage garden. The Lilac Valley Farm Stay has been incredibly popular on AirBnB, and was even featured in a handful of online articles
+                        </p>
+                        <a>Read more</a>
+                    </div>
 
                 <img class="icon" id="alpaca" src="images/alpaca_icon.png" alt="an illustration of an alpaca">
 
+                <!--Customer reviews on Lilac Valley experience-->
                <div class="review_container">
                     <p class="title">
                         Here at Lilac Valley, we pride ourselves on the excellent service and friendliness consistently provided to our visitors
@@ -96,8 +95,9 @@
             </section>
                 
 
-            <!--SECTION 2-->
+            <!--SECTION 2: Image gallery-->
             <section id="gallery">
+                <!--Background element just to decorate the section-->
                 <div class="pic_container"></div>
 
                 <!--List of images-->
@@ -111,10 +111,12 @@
                 <img class="gallery_pic" id="pic8" src="images/wheat_field.webp" alt="a field of wheats">
                 <!--End of image list-->
 
-                <div class="circle" href="#home">
+                <!--view more button-->
+                <div class="circle">
                     <a>View more</a>
                 </div>
 
+                <!--Brief description of the pictures, this text container stays at the top right corner-->
                 <div class="description_container">
                     <p class="title">Gallery</p>
                     <p class="description">
@@ -122,14 +124,15 @@
                         our past visitors.
                     </p>
                 </div>
-
                 <img class="icon" id="woods" src="images/log_icon.png" alt="a stack of 3 blocks of wood">
             </section>
 
-            <!--SECTION 3-->
+            <!--SECTION 3: Booking-->
             <section id="booking">
                 <div class="form_container">
                     <p class="title">Book now</p>
+
+                    <!--The actual form contains user inputs to be filled in-->
                     <div class="booking_form">
                         <!--Text input fields for customers personal information-->
                         <label for="name">Full name</label><br>
@@ -146,6 +149,7 @@
                     </div>
                 </div>
 
+                <!--Small circular menu contains other booking related options-->
                 <div class="circle" id="booking_option_container">
                     <img id="chicken_icon" src="images/chicken_icon.png">
 
@@ -156,9 +160,12 @@
                     <a>Payment</a>
                 </div>
 
+                <!--Calendar for the users to select a booking date-->
                 <div class="calendar_container">
+                    <!--displace the days of 1 month to book from-->
                     <img id="calendar" src="images/booking_calendar.png">
                     <p class="title">Date</p>
+                    <!--Buttons that allow the users to view next and previous months-->
                     <i class="fa-solid fa-caret-left" id="left_arrow"></i>
                     <i class="fa-solid fa-caret-right" id="right_arrow"></i>
                 </div>
@@ -167,12 +174,14 @@
                     <a>Confirm</a>
                 </div>
 
+                <!--Decorative icon stays on the top left of this container-->
                 <img id="wheat_icon" src="images/wheats.png" alt="a group of wheats">
             </section>
 
             <!--SECTION 4-->
             <section id="contact">
                 <img class="background" src="images/lilacvalley_logo.PNG" alt="a logo illustrating a barn">
+
                 <div class="contact_info_container">
                     <p class="title">Get in touch</p>
                     <p>Location:</p>
@@ -183,13 +192,16 @@
                     <a>lilacvalleyft@gmail.com</a><br>
                     <a>lvalleyfarmst@outlook.com</a>
                     <p id="social_txt">Social media:</p>
+                    <!--Different social media platform icons from FontAwesome-->
                     <i class="fa-brands fa-twitter-square"></i>
                     <i class="fa-brands fa-instagram-square"></i>
                     <i class="fa-brands fa-facebook-square"></i>
                     <i class="fa-brands fa-airbnb"></i>
                 </div>
 
+                <!--Show location of Lilac Valley farm stay-->
                 <img class="map" src="images/nsw_map.png" alt="a map of NSW region">
+                <!--Decorative icon-->
                 <img class="cow_icon" src="images/cow_icon.png" alt="an illustration of a cow">
             </section>
             

@@ -12,6 +12,11 @@
        color:white; 
        font-weight: normal;
    }
+
+    .title{
+        font-family: 'Lora', serif;
+        font-weight: bold;
+    }
    
    section{
        position: relative;
@@ -20,16 +25,12 @@
        width: 100vw;
    }
    
-   /* ==========HEADER============= */
-   header{
-       width: 100%;
-   }
-   
    /*============NAVIGATION============*/
-   /* ==========LOGO============= */
+   /*==========LOGO============= */
    .circle{
-       position: fixed;
-       z-index: 2;
+       /*a div that contains Lilac Valley logo image*/
+       position: fixed; /*make the position of navigation element persist throughout the webpage*/
+       z-index: 2;      /*home button/logo sits in front of the navigation menu*/
    
        /*frosted glass effect*/
        background-color: rgba(225, 167, 91, 0.75);
@@ -43,7 +44,7 @@
        text-align: center;
    }
    
-   /* ==========NAVIGATION============= */
+   /*==============NAVIGATION===============*/
    .nav_menu{
        position: fixed;
        z-index: 1;
@@ -59,23 +60,25 @@
        justify-content: center;
    }
    
-   /* ==========MAIN BODY CONTENT============= */
+   /*=============MAIN BODY CONTENT=============*/
    #main{
        display: flex;
        flex-direction: column;
    }
-   /*=================HOME=====================*/
+   /*=================HOMEPAGE=====================*/
    #home div, #home img{
        position: absolute;
    }
    
    .cover_img{
-       height: auto;
+       height: auto;    /*keep the image's original aspect ratio while resizing just the width*/
+       /*Create depth to the image with shadow of 10px vertical offset and 20px blur*/
        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
        -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
    }
    
    .text_container{
+       /*align the inner text in the centre vertically*/
        display: flex;
        flex-direction: column;
        height: fit-content;
@@ -85,32 +88,22 @@
        /*make sure it works on safari and chrome*/
        backdrop-filter: blur(10px);
        -webkit-backdrop-filter: blur(10px);
-       /*box-shadow: 0 1px 12px rgba(0, 0, 0, 0.1);*/
    }
+
    
-   .title{
-       font-family: 'Lora', serif;
-       font-weight: bold;
-   }
-   
-   
-   /* ==========SECTION 1 STYLING (ABOUT)============ */
+   /*===========SECTION 1 STYLING (ABOUT)=============*/
    #about{
        display: flex;
        justify-content: center;
    }
    
-   .abt_img_holder{
-       position: absolute;
-       width: fit-content;
-       height: fit-content;
-   }
-   
    .icon{
+       /*illustrated iconography*/
        position: absolute;
    }
    
    #about div{
+       /*text containers*/
        position: absolute;
        text-align: center;
    }
@@ -122,11 +115,11 @@
        backdrop-filter: blur(8px);
        -webkit-backdrop-filter: blur(8px);
    
-       border-radius: 50%;    
+       border-radius: 50%;   /*make this text container a circle*/ 
    }
    
    .abt_us_container a, .review_container a{
-       color: #1b1b1b;
+       color: #1b1b1b;  /*contrasting colour to differentiate anchor texts from regular texts*/
    }
    
    .review_container{
@@ -143,7 +136,8 @@
        font-family: 'Pacifico', cursive;
    }
    
-   #about .img{
+   .abt_img{
+       /*Background image for the About section*/
        max-width:100%;
        max-height:100%;
    }
@@ -154,11 +148,10 @@
        -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
    }
    
-   /* ==========SECTION 2 STYLING (GALLERY)============= */
+   /*==========SECTION 2 STYLING (GALLERY)=============*/
    #gallery{
        display: flex;
        justify-content: center;
-       height: 300vh;  /*longer to contains multiple images arranged in column order*/
    }
    
    #gallery div{
@@ -166,7 +159,7 @@
    }
    
    #gallery .description_container{
-       right: 0;
+       right: 0;    /*Pin this text container to the very right of the screen*/
    
        /*frosted glass effect*/
        background-color: rgba(186, 52, 47, 0.7);
@@ -176,16 +169,18 @@
    }
    
    #gallery .icon{
+       /*The wood icon that sits below the gallery description text container*/
        height: auto;
        right: 0;
    }
    
    .pic_container{
+       /*background filler*/
        background-color: rgba(253, 241, 234, 0.46);
        border: solid rgb(164, 124, 45, 0.7);
    }
    
-   #gallery img{
+   .gallery_pic{
        position: absolute;
    }
    
@@ -195,6 +190,7 @@
    }
    
    #gallery .circle{
+       /*click-to-view-more button, given a circular shape*/
        display: flex;
        flex-direction: column;
        justify-content: center;
@@ -205,12 +201,11 @@
    #booking{
        display: flex;
        justify-content: center;
-       height: 200vh;
    }
    
    #booking p{
        position: absolute;
-       color: black;
+       color: black;    /*give the texts here contrast colour to the containing booking form background's colour*/
    }
    
    #booking div{
@@ -218,6 +213,7 @@
    }
    
    .form_container{
+       /*the main booking form*/
        background-color: #e69868;
        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.40);
        -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.40);
@@ -227,6 +223,7 @@
        color: black;
    }
    
+   /*user input fields*/
    input[type=text]{
        width: 99%;
        display: inline-block;
@@ -249,7 +246,7 @@
    }
    
    #calendar{
-       border-radius: 10px;
+       border-radius: 1vw;
    }
    
    .calendar_container i{
@@ -258,12 +255,13 @@
    }
    
    #booking .circle{
+       /*confirm button*/
        display: flex;
        flex-direction: column;
        z-index: unset;
    }
    
-   #booking_option_container, .semi_circle{
+   #booking_option_container{
        background-color: #f4e2c1;
    
        /*Inner shadow for this container sop it looks like the form is floating*/
@@ -273,6 +271,8 @@
    
    #chicken_icon{
        position: absolute;
+       height: auto;
+       max-height: unset;
    }
    
    #confirm_button{
@@ -461,6 +461,7 @@
 
         /*===================NAVIGATION================*/
         #home_button{
+            /*give the circular home button that contains the logo a fixed dimension so it does not extend infinitely to adapt to wider screen*/
             width: 140px;
             height: 140px;
 
@@ -468,12 +469,13 @@
         }
 
         .circle img{
-            margin-top: 16px;
+            margin-top: 16px;   /*align the Lilac Valley logo vertically*/
             width: 105px;
             height: 105px;
         }
 
         .nav_menu{
+            /*give the navigation menu a fixed width and height so it does not extend infinitely, making the anchor texts more sparse*/
             border-bottom-left-radius: 42px;
             border-bottom-right-radius: 42px;
             width: 900px;
@@ -503,7 +505,7 @@
             border-radius: 2.6vw;
             height: 30vw;
             width: 18vw;
-            padding: 0.25vw 1.6vw;
+            padding: 0.25vw 1.6vw;  /*give the inner text more whitespace*/
 
             transform: translate(68vw, 27.2vw);
         }
@@ -527,20 +529,21 @@
 
         /*==================ABOUT==================== */
         .abt_img{
-            transform: translate(0, 15vw);
-            border-radius: 2.3vw;
+            transform: translate(0, 15vw);  /*slight shift the background image down*/
+            border-radius: 2.3vw;   /*give it rounded corners*/
             width: 60vw;
             height: 45vw;
         }
 
         #about .icon{
+            /*the alpaca icon*/
             width: 12vw;
             height: 12vw;
-            transform: translate(20vw, 7.3vw);
+            transform: translate(20vw, 7.3vw);  /*shift it to the top right of the background image*/
         }
 
         .abt_us_container{
-            transform: translate(-28vw, 8vw);
+            transform: translate(-28vw, 8vw);   /*shift this text container to the top left of the background image*/
             width: 25vw;
             height: 25vw;
         }
@@ -563,10 +566,10 @@
     
         .review_container{
             width: 30vw;
-            border-radius: 2.5vw;
+            border-radius: 2.5vw;   /*give it rounded corners*/
             padding: 0.5vw 0.8vw;
 
-            transform: translate(24vw, 50vw);
+            transform: translate(24vw, 50vw);   /*shift this text container to the bottom right of the background image*/
         }
 
         .review_txt{
@@ -580,7 +583,7 @@
 
         /*==================GALLERY===================*/
         #gallery{
-            height: 110vw;
+            height: 110vw;  /*slight taller gallery section to contains more images*/
         }
 
         #gallery .description_container{
@@ -589,12 +592,12 @@
             height: 15vw;
             width: 28vw;
 
-            transform: translate(0, 5vw);
+            transform: translate(0, 5vw);   /*slightly shift it down from top right*/
         }
 
         .description_container p{
             font-size: 0.9vw;
-            padding: 0vw 2.5vw 0vw 3.5vw;
+            padding: 0vw 2.5vw 0vw 3.5vw;   /*shift this text in such a way that it does not overlap with the log icon*/
         }
 
         .description_container .title{
@@ -604,10 +607,11 @@
 
         #gallery .icon{
             width: 11vw;
-            transform: translate(0.2vw, 17vw);
+            transform: translate(0.2vw, 17vw);  /*shift this icon in such a way that it does not overlap with the texts*/
         }
         
         .pic_container{
+            /*centre background*/
             width: 80vw;
             height: 88vw;
 
@@ -619,7 +623,7 @@
 
         .gallery_pic{
             height: auto;
-            border-radius: 1vw;
+            border-radius: 1vw; /*give each picture slight rounded corners*/
         }
 
         #pic1{
@@ -668,6 +672,7 @@
         }
 
         /*=========Picture on hover animations============*/
+        /*slightly enlarge these pictures upon hover*/
         #pic1:hover{
             width: 40.5vw;
         }
@@ -696,6 +701,7 @@
             width: 29.5vw;
         }
 
+        /*view-more-button*/
         #gallery .circle{
             transform: translate(-25vw, 96vw);
         }
@@ -703,11 +709,12 @@
 
         /*===================BOOKING=====================*/
         .form_container{
+            /*main container that consists of the booking form and booking option container*/
             border-radius: 18vw;
             width: 100vw;
             height: 70vw;
 
-            transform: translate(-4%, 20vw);
+            transform: translate(-4%, 20vw);    /*shift this container to the far left*/
         }
 
         .form_container .title, .calendar_container .title, .calendar_container i{
@@ -719,11 +726,13 @@
         }
 
         .form_container .title{
+            /*place the "Book now" text at top left of the form container*/
             margin-top: 8vw;
             margin-left: 12%;
         }
 
         .booking_form label{
+            /*annotate the category for its corresponding user input field*/
             padding-left: 1vw;
         }
 
@@ -737,9 +746,11 @@
         }
 
         .booking_form{
+            /*contains user input fields, takes up nearly half the width of the main form container*/
             width: 43vw;
             height: fit-content;
 
+            /*place it at the left side of form container, sits below the "Book now" text*/
             margin-top: 20vw;
             margin-left: 10%;
         }
@@ -749,23 +760,22 @@
             width: 45vw;
             height: 38vw;
             
-            transform: translate(28vw, 7vw);
+            transform: translate(28vw, 7vw);    /*place it at the top right of the Booking section*/
         }
 
         #calendar{
             height: 75%;
-            border-radius: 1vw;
-            transform: translate(0, 8vw);
+            transform: translate(0, 8vw);   /*shift down slightly to make room for the "Date" text and prev, next buttons*/
         }
 
         .calendar_container .title{
-            transform: translate(-14vw, -1vw);
+            transform: translate(-14vw, -1vw);  /*"Date" text sits at top left of the calendar container*/
         }
 
+        /*for going to the next and previous months*/
         #right_arrow{
             transform: translate(14vw, 2vw);
         }
-
         #left_arrow{
             transform: translate(9vw, 2vw);
         }
@@ -774,32 +784,31 @@
             width: 28vw;
             height: 28vw;
 
-            transform: translate(25vw, 52vw);
+            transform: translate(25vw, 52vw);   /*sits at the right to the booking form*/
         }
 
         #chicken_icon{
             width: 9vw;
-            height: auto;
-            max-height: unset;
-    
-            transform: translate(10vw, 17vw);
+            transform: translate(10vw, 17vw);   /*positioned below the option anchor texts*/
         }
 
         #booking_option_container a{
+            /*4 different booking related options, each sits on top of another*/
             padding: 1.4vw 0vw;
         }
 
         #wheat_icon{
             width: 11vw;
-            transform: translate(-18vw, 12vw);
+            transform: translate(-18vw, 12vw);  /*positioned on top the form container, to the left of calendar container*/
         }
 
         #confirm_button{
-            transform: translate(-28vw, 86vw);
+            transform: translate(-28vw, 86vw);  /*positioned below the booking form*/
         }
 
        /*==================CONTACT=====================*/
         #contact .background{
+            /*use Lilac Valley logo as background for the contact info container*/
             width: 30vw;
             transform: translate(-20vw, 30vw);
         }
@@ -809,7 +818,7 @@
             width: 48vw;
             border-radius: 4.5vw;
 
-            transform: translate(-22vw, 20vw);     
+            transform: translate(-22vw, 20vw);  /*positioned on the left of the Contact section*/   
             padding-left: 3vw;   
         }
 
@@ -818,6 +827,7 @@
         }
 
         .contact_info_container .title{
+            /*"Get in touch" text*/
             font-size: 2.5vw;
             padding: 1vw 0vw;
         }
@@ -827,10 +837,12 @@
         }
 
         #social_txt{
+            /*"Social media" text*/
             padding-top: 3.5vw;
         }
 
         .contact_info_container i{
+            /*the social media platform icons placed inline, sit below the "Social media" text*/
             font-size: 4vw;
             padding-top: 0.8vw;
             padding-right: 0.68vw;
@@ -838,12 +850,12 @@
 
         .map{
             width: 66vw;
-            transform: translate(19vw, 10vw);
+            transform: translate(19vw, 10vw);   /*place the map at the top right of the Booking section*/
         }
 
         .cow_icon{
             width: 23vw;
-            transform: translate(2vw, 51vw);
+            transform: translate(2vw, 51vw);    /*place this icon below the map*/
         }
 
 
@@ -876,6 +888,8 @@
         .title{
             font-size: xx-large;
         }
+
+        /*fixed sized navigation elements*/
         #home_button{
             width: 120px;
             height: 120px;
@@ -915,6 +929,7 @@
         }
        
        /*==================ABOUT====================*/
+       /*fixed sized elements for the About section*/
        .abt_img{
            transform: translate(0%, 44%);
            border-radius: 30px;
@@ -1111,6 +1126,7 @@
        }
    
        /*===================NAVIGATION====================*/
+       /*return to responsive sizing to adapt to various tablet screen sizes*/
         #home_button{
             width: 10vw;
             height: 10vw;
@@ -1147,8 +1163,10 @@
            max-width: 1100px;
            border-bottom-right-radius: 2.8vw;
            border-top-right-radius: 2.8vw;
-           
-           transform: translate(-18%, 1.8vw);
+
+           /*crop the left portion of the image slightly to allow for a taller image that fits better
+           with taller tablet, mobile screens without changing the original aspect ratio*/
+           transform: translate(-18%, 1.8vw);   
        }
 
         .text_container{
@@ -1465,7 +1483,7 @@
         #home_button{
             width: 11vw;
             height: 11vw;
-            transform: translate(22vw, 15%);
+            transform: translate(20vw, 15%);
         }
 
         .circle img{
@@ -1527,16 +1545,17 @@
             margin-left: 9%;
         }
 
-        /*Enlarge the calendar container so it does not appear too small on narrower screens*/
+        /*Enlarge the calendar container so the calendar itself does not appear too small on narrower screens*/
         .calendar_container{
             border-radius: 5.6vw;
             width: 66vw;
             height: 52vw;
             
-            transform: translate(17vw, 10vw);
+            transform: translate(17vw, 10vw);   /*give it more space to the left*/
         }
 
         #calendar{
+            /*enlarge the calendar to help with readability*/
             height: 80%;
         }
 
@@ -1555,7 +1574,7 @@
         .booking_form{
             width: 50vw;
 
-            margin-top: 40vw;
+            margin-top: 40vw;   /*place it more below the calendar container to avoid overlapping*/
             margin-left: 8%;
         }
 
@@ -1588,12 +1607,11 @@
    
        .contact_info_container{
            height: 80vw;
-           /*max-height: 550px;*/
-           width: 68vw;
+           width: 68vw;         /*give it more horizontal space*/
            border-radius: 5.8vw;
    
            transform: translate(-10vw, 15vw);     
-           text-align: center;
+           text-align: center;  /*arrange texts in the centre rather than the left like before*/
        }
    
        /*Adjust font size to view width instead of pixel to utilise various tablet sizes*/
@@ -1624,12 +1642,12 @@
        .map{
            width: 85vw;
            border-radius: 2vw;
-           transform: translate(7vw, 70vw);
+           transform: translate(7vw, 70vw);     /*shift the map more down to the bottom*/
        }
    
        .cow_icon{
            width: 20vw;
-           transform: translate(30vw, 52vw);
+           transform: translate(30vw, 52vw);    /*place this icon on top the map instead of below like before*/
        }   
    }
    
@@ -1699,7 +1717,7 @@
        .abt_us_container{
            width: 49vw;
            height: 49vw;
-           transform: translate(-23vw, 15vw);
+           transform: translate(-23vw, 15vw);   /*shift more towards the right to fit in narrower width*/
        }
 
        #about .abt_us_container .title{
@@ -1713,7 +1731,7 @@
    
        .review_container{
            width: 52vw;
-           transform: translate(22vw, 96vw);
+           transform: translate(22vw, 96vw);    /*shift more towards the left to fit in narrower width*/
        }
 
        .review_container p{
@@ -1760,6 +1778,10 @@
         }
 
         /*=================BOOKING=====================*/
+        #booking{
+            height: 180vw;  /*longer height since elements here are arranged more vertically in mobile form factor with narrower width*/
+        }
+
         .form_container .title, .calendar_container .title, .calendar_container i{
             font-size: 3.8vw;
         }
@@ -1789,7 +1811,7 @@
         }
 
         .booking_form label, input[type=text], #confirm_button a{
-            font-size: 2.15vw;
+            font-size: 2.15vw;      /*larger text size than before to help with readability*/
         }
 
         .booking_form label{
@@ -1832,13 +1854,17 @@
 
 
         /*==================CONTACT=====================*/
+        #contact{
+            height: 180vw;  /*longer height since elements here are arranged more vertically in mobile form factor with narrower width*/
+        }
+
         #contact .background{
             width: 45vw;
             transform: translate(-10vw, 40vw);
         }
     
         .contact_info_container{
-            height: 140vw;
+            height: 140vw;      /*make it taller to fill the longer vertical space of phone screens nicely*/
             transform: translate(-10vw, 20vw);     
         }
     
@@ -1930,7 +1956,7 @@
         }
     
         .contact_info_container p, .contact_info_container a{
-            font-size: 2vw;
+            font-size: 2vw; /*larger text size than before to help with readability*/
         }
 
         .contact_info_container .title{
