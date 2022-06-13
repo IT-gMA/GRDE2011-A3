@@ -61,10 +61,6 @@
    }
    
    /*=============MAIN BODY CONTENT=============*/
-   #main{
-       display: flex;
-       flex-direction: column;
-   }
    /*=================HOMEPAGE=====================*/
    #home div, #home img{
        position: absolute;
